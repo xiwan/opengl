@@ -17,60 +17,12 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 void maxVertexCheck();
-
 int loadTexture(const char* vertexPath, GLint internalformat, GLenum format);
-
 GLFWwindow* prepareWindow(const char* windowTitle);
-
 
 // settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
-
-
-const float cubeVertices[] = {
--0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
- 0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
- 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
- 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
--0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
--0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
-
--0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
- 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
- 0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
- 0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
--0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
--0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-
--0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
--0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
--0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
--0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
--0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
--0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-
- 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
- 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
- 0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
- 0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
- 0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
- 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-
--0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
- 0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
- 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
- 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
--0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
--0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-
--0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
- 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
- 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
- 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
--0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
--0.5f,  0.5f, -0.5f,  0.0f, 1.0f
-};
 
 #endif
 

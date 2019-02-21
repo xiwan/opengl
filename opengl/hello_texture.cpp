@@ -87,13 +87,13 @@ int hello_texture()
 		trans = glm::translate(trans, glm::vec3(sinValue, -0.5f, 0.0f));
 		trans = glm::rotate(trans, timeValue, glm::vec3(0.0f, 0.0f, 1.0f));	
 		//textureShader.setMatrix4("sinValue", &sinValue);
-		textureShader.setMatrix4("transform", glm::value_ptr(trans));
+		textureShader.setMat4("transform", trans);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 		glm::mat4 transform = glm::mat4(1.0f); // reset it to identity matrix
 		transform = glm::translate(transform, glm::vec3(-0.5f, 0.5f, 0.0f));
 		transform = glm::scale(transform, glm::vec3(sinValue, sinValue, sinValue));
-		textureShader.setMatrix4("transform", glm::value_ptr(transform));
+		textureShader.setMat4("transform", transform);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)

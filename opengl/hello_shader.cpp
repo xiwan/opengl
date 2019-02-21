@@ -116,7 +116,7 @@ int hello_shader()
 
 		ourShader2.use();
 		ourShader2.setFloat("xOffset", offset);
-		ourShader2.setFloat4("ourColor", 0.0f, greenValue, 0.0f, 1.0f);
+		//ourShader2.setFloat4("ourColor", 0.0f, greenValue, 0.0f, 1.0f);
 		glBindVertexArray(VAOs[1]);
 		//glDrawArrays(GL_TRIANGLES, 0, 3);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

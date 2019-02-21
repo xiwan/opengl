@@ -1,10 +1,10 @@
-﻿  hello_camera_fps.cpp
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(79): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(145): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(146): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(150): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(151): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(153): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(154): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\hello_camera_fps.cpp(163): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+﻿  lighting_color.cpp
+e:\vsprojects\opengl\opengl\lighting_color.cpp(115): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_color.cpp(190): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_color.cpp(191): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_color.cpp(195): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_color.cpp(196): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_color.cpp(198): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_color.cpp(199): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_color.cpp(208): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   opengl.vcxproj -> E:\vsprojects\opengl\Debug\opengl.exe

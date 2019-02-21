@@ -97,9 +97,9 @@ int hello_3d()
 		projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
 
 		//textureShader.setMatrix4("sinValue", &sinValue);
-		textureShader.setMatrix4("model", glm::value_ptr(model));
-		textureShader.setMatrix4("view", glm::value_ptr(view));
-		textureShader.setMatrix4("projection", glm::value_ptr(projection));
+		textureShader.setMat4("model", model);
+		textureShader.setMat4("view", view);
+		textureShader.setMat4("projection", projection);
 
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
