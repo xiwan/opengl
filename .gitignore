@@ -1,2 +1,7 @@
 Debug/*
+opengl/Debug/*
+*.obj
+*.log
+*.tlog
+.vscode
 .vs

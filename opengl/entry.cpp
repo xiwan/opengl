@@ -5,6 +5,7 @@ int hello_shader();
 int hello_texture();
 int hello_3d();
 int hello_3d_cube();
+int hello_camera();
 
 int main()
 {
@@ -13,5 +14,6 @@ int main()
 	//hello_shader();
 	//hello_texture();
 	//hello_3d();
-	hello_3d_cube();
+	//hello_3d_cube();
+	hello_camera();
 }
