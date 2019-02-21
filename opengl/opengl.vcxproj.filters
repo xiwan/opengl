@@ -39,6 +39,9 @@
     <ClInclude Include="headers\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headers\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp">
@@ -69,6 +72,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="includes\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_camera_fps.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -122,6 +122,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="headers\camera.h" />
     <ClInclude Include="headers\hello_common.h" />
     <ClInclude Include="headers\resource.h" />
     <ClInclude Include="headers\Shader.h" />
@@ -134,6 +135,7 @@
     <ClCompile Include="hello_3d.cpp" />
     <ClCompile Include="hello_3d_cube.cpp" />
     <ClCompile Include="hello_camera.cpp" />
+    <ClCompile Include="hello_camera_fps.cpp" />
     <ClCompile Include="hello_common.cpp" />
     <ClCompile Include="hello_shader.cpp" />
     <ClCompile Include="hello_texture.cpp" />

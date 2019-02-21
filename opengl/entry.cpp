@@ -6,6 +6,7 @@ int hello_texture();
 int hello_3d();
 int hello_3d_cube();
 int hello_camera();
+int hello_camera_fps();
 
 int main()
 {
@@ -15,5 +16,6 @@ int main()
 	//hello_texture();
 	//hello_3d();
 	//hello_3d_cube();
-	hello_camera();
+	//hello_camera();
+	hello_camera_fps();
 }
