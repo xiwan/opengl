@@ -1,4 +1,3 @@
-#include "./headers/camera.h"
 #include "./headers/shader.h"
 #include "./headers/opengl_common.h"
 // lighting

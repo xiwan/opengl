@@ -133,6 +133,12 @@
     <None Include="shaders\texture.shader.vs">
       <Filter>资源文件\shaders</Filter>
     </None>
+    <None Include="shaders\light_material.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\light_material.shader.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="pics\awesomeface.png">

@@ -159,6 +159,8 @@
     <None Include="shaders\light_cube.shader.vs" />
     <None Include="shaders\light_lamp.shader.fs" />
     <None Include="shaders\light_lamp.shader.vs" />
+    <None Include="shaders\light_material.shader.fs" />
+    <None Include="shaders\light_material.shader.vs" />
     <None Include="shaders\light_source.shader.fs" />
     <None Include="shaders\texture.shader.fs" />
     <None Include="shaders\texture.shader.vs" />

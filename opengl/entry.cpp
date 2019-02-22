@@ -11,6 +11,7 @@ int hello_camera_fps();
 // lighting
 int lighting_color();
 int lighting_basic();
+int lighting_material();
 
 int main()
 {
@@ -24,6 +25,6 @@ int main()
 	//hello_camera_fps();
 
 	//lighting_color();
-	lighting_basic();
-
+	//lighting_basic();
+	lighting_material();
 }

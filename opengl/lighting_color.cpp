@@ -1,7 +1,5 @@
 #include "./headers/shader.h"
 #include "./headers/opengl_common.h"
-#include "./headers/camera.h"
-
 
 // lighting
 extern glm::vec3 lightPos;
