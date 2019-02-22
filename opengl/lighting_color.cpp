@@ -1,26 +1,22 @@
-#include "./headers/Shader.h"
-#include "./headers/hello_common.h"
+#include "./headers/shader.h"
+#include "./headers/opengl_common.h"
 #include "./headers/camera.h"
 
-void processInputMoveColor(GLFWwindow *window);
-void mouse_callback_color(GLFWwindow* window, double xpos, double ypos);
-void scroll_callback_color(GLFWwindow* window, double xoffset, double yoffset);
-
-//camera system
-const glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 5.0f);
-const glm::vec3 cameraFront = glm::vec3(1.2f, 1.0f, -3.0f);
-const glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 
 // lighting
-const glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+extern glm::vec3 lightPos;
 
-Camera colorCamera(cameraPos);
-float lastX_color = SCR_WIDTH / 2.0f;
-float lastY_color = SCR_HEIGHT / 2.0f;
-bool firstMouseColor = true;
+//camera system
+extern glm::vec3 cameraPos;
+extern glm::vec3 cameraFront;
+extern glm::vec3 cameraUp;
 
-float deltaTime_color = 0.0f;	// Time between current frame and last frame
-float lastFrame_color = 0.0f; // Time of last frame
+extern GlobalConfig gConfig;
+
+extern void processInput(GLFWwindow *window);
+extern void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+extern void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+
 
 int lighting_color()
 {
@@ -28,9 +24,8 @@ int lighting_color()
 	if (!window) {
 		return -1;
 	}
-
-	glfwSetCursorPosCallback(window, mouse_callback_color);
-	glfwSetScrollCallback(window, scroll_callback_color);
+	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetScrollCallback(window, scroll_callback);
 
 	// tell GLFW to capture our mouse
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -115,11 +110,8 @@ int lighting_color()
 	// -----------
 	while (!glfwWindowShouldClose(window))
 	{
-		float currentFrame = glfwGetTime();
-		deltaTime_color = currentFrame - lastFrame_color;
-		lastFrame_color = currentFrame;
-
-		processInputMoveColor(window);
+		float currentFrame = gConfig.get_currentFrame();
+		processInput(window);
 
 		// render
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -134,8 +126,8 @@ int lighting_color()
 		glm::mat4 projection = glm::mat4(1.0f);
 
 		model = glm::rotate(model, glm::radians(20.0f), glm::vec3(1.0f, 1.0f, 0.0f));
-		view = colorCamera.GetViewMatrix();
-		projection = glm::perspective(glm::radians(colorCamera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+		view = gConfig.get_view();
+		projection = gConfig.get_perspective();
 
 		cubeShader.setMat4("view", view);
 		cubeShader.setMat4("projection", projection);
@@ -168,44 +160,4 @@ int lighting_color()
 	// ------------------------------------------------------------------
 	glfwTerminate();
 	return 0;
-}
-
-void processInputMoveColor(GLFWwindow *window)
-{
-	processInput(window);
-	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-		colorCamera.ProcessKeyboard(FORWARD, deltaTime_color);
-	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-		colorCamera.ProcessKeyboard(BACKWARD, deltaTime_color);
-	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-		colorCamera.ProcessKeyboard(LEFT, deltaTime_color);
-	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-		colorCamera.ProcessKeyboard(RIGHT, deltaTime_color);
-}
-
-// glfw: whenever the mouse moves, this callback is called
-// -------------------------------------------------------
-void mouse_callback_color(GLFWwindow* window, double xpos, double ypos)
-{
-	if (firstMouseColor)
-	{
-		lastX_color = xpos;
-		lastY_color = ypos;
-		firstMouseColor = false;
-	}
-
-	float xoffset = xpos - lastX_color;
-	float yoffset = lastY_color - ypos; // reversed since y-coordinates go from bottom to top
-
-	lastX_color = xpos;
-	lastY_color = ypos;
-
-	colorCamera.ProcessMouseMovement(xoffset, yoffset);
-}
-
-// glfw: whenever the mouse scroll wheel scrolls, this callback is called
-// ----------------------------------------------------------------------
-void scroll_callback_color(GLFWwindow* window, double xoffset, double yoffset)
-{
-	colorCamera.ProcessMouseScroll(yoffset);
 }

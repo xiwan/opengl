@@ -27,19 +27,19 @@
     <ClInclude Include="includes\glfw\Includes\KHR\khrplatform.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\hello_common.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="headers\resource.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\Shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="headers\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="headers\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\opengl_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -51,9 +51,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="hello_camera.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="hello_common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="hello_shader.cpp">
@@ -81,6 +78,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="lighting_basic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="light_material.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl_common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -122,6 +125,12 @@
       <Filter>资源文件\shaders</Filter>
     </None>
     <None Include="shaders\light_lamp.shader.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\texture.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\texture.shader.vs">
       <Filter>资源文件\shaders</Filter>
     </None>
   </ItemGroup>

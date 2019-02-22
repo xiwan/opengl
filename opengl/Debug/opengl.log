@@ -1,10 +1,115 @@
-﻿  lighting_basic.cpp
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(116): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(192): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(193): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(197): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(198): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(200): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(201): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_basic.cpp(210): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+﻿  entry.cpp
+  hello_3d.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\hello_3d.cpp(79): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  hello_3d_cube.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\hello_3d_cube.cpp(119): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  hello_camera.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  hello_camera_fps.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  hello_shader.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\hello_shader.cpp(113): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  hello_texture.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\hello_texture.cpp(83): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  hello_triangle.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  hello_window.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  light_material.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  lighting_basic.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  lighting_color.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  opengl_common.cpp
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
   opengl.vcxproj -> E:\vsprojects\opengl\Debug\opengl.exe

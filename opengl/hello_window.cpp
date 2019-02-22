@@ -1,4 +1,5 @@
-#include "./headers/hello_common.h"
+#include "./headers/shader.h"
+#include "./headers/opengl_common.h"
 
 int hello_window()
 {

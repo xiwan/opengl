@@ -1,14 +1,33 @@
-#include "./headers/hello_common.h"
-
 #define STB_IMAGE_IMPLEMENTATION_3
 #include "./headers/stb_image.h"
+#include "./headers/opengl_common.h"
+
+//camera system
+glm::vec3 cameraPos = glm::vec3(0.0f, 1.0f, 3.0f);
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+// light position
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+
+GlobalConfig gConfig(cameraPos);
 
 // process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
 // ---------------------------------------------------------------------------------------------------------
 void processInput(GLFWwindow *window)
 {
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
+	gConfig.process_keyboard_simple(window);
+}
+
+void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+	gConfig.mouse_callback_simple(window, xpos, ypos);
+}
+
+// glfw: whenever the mouse scroll wheel scrolls, this callback is called
+// ----------------------------------------------------------------------
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+	gConfig.scroll_callback_simple(window, xoffset, yoffset);
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes

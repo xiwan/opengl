@@ -1,4 +1,5 @@
-#include "./headers/hello_common.h"
+#include "./headers/shader.h"
+#include "./headers/opengl_common.h"
 
 const char *vertexShaderSource = "#version 330 core\n"
 "layout (location = 0) in vec3 aPos;\n"

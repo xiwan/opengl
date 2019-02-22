@@ -1,26 +1,19 @@
-#include "./headers/hello_common.h"
 #include "./headers/camera.h"
-#include "./headers/Shader.h"
-
-void processInputMoveBasic(GLFWwindow *window);
-void mouse_callback_basic(GLFWwindow* window, double xpos, double ypos);
-void scroll_callback_basic(GLFWwindow* window, double xoffset, double yoffset);
+#include "./headers/shader.h"
+#include "./headers/opengl_common.h"
+// lighting
+extern glm::vec3 lightPos;
 
 //camera system
-const glm::vec3 cameraPos = glm::vec3(0.0f, 1.5f, 3.0f);
-const glm::vec3 cameraFront = glm::vec3(1.2f, 1.0f, -3.0f);
-const glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+extern glm::vec3 cameraPos;
+extern glm::vec3 cameraFront;
+extern glm::vec3 cameraUp;
 
-// lighting
-const glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+extern GlobalConfig gConfig;
 
-Camera basicCamera(cameraPos);
-float lastX_basic = SCR_WIDTH / 2.0f;
-float lastY_basic = SCR_HEIGHT / 2.0f;
-bool firstMouseBasic = true;
-
-float deltaTime_basic = 0.0f;	// Time between current frame and last frame
-float lastFrame_basic = 0.0f; // Time of last frame
+extern void processInput(GLFWwindow *window);
+extern void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+extern void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 
 int lighting_basic()
 {
@@ -28,8 +21,8 @@ int lighting_basic()
 	if (!window) {
 		return -1;
 	}
-	glfwSetCursorPosCallback(window, mouse_callback_basic);
-	glfwSetScrollCallback(window, scroll_callback_basic);
+	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetScrollCallback(window, scroll_callback);
 
 	// tell GLFW to capture our mouse
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -113,25 +106,24 @@ int lighting_basic()
 // -----------
 	while (!glfwWindowShouldClose(window))
 	{
-		float currentFrame = glfwGetTime();
-		deltaTime_basic = currentFrame - lastFrame_basic;
-		lastFrame_basic = currentFrame;
-
-		processInputMoveBasic(window);
+		float currentFrame = gConfig.get_currentFrame();
+		processInput(window);
 
 		// render
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+		lightPos = glm::vec3(cos(currentFrame)+ 0.0f, 2.0f, sin(currentFrame) + 0.0f);
+
 		basicShader.use();
 		basicShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
 		basicShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
 		basicShader.setVec3("lightPos", lightPos);
-		basicShader.setVec3("viewPos", basicCamera.Position);
+		basicShader.setVec3("viewPos", gConfig.gCamera.Position);
 
 		//model = glm::rotate(model, glm::radians(20.0f), glm::vec3(1.0f, 1.0f, 0.0f));
-		glm::mat4 projection = glm::perspective(glm::radians(basicCamera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-		glm::mat4 view = basicCamera.GetViewMatrix();
+		glm::mat4 view = gConfig.get_view();
+		glm::mat4 projection = gConfig.get_perspective();
 		basicShader.setMat4("view", view);
 		basicShader.setMat4("projection", projection);
 
@@ -167,45 +159,4 @@ int lighting_basic()
 	// ------------------------------------------------------------------
 	glfwTerminate();
 	return 0;
-}
-
-
-void processInputMoveBasic(GLFWwindow *window)
-{
-	processInput(window);
-	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-		basicCamera.ProcessKeyboard(FORWARD, deltaTime_basic);
-	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-		basicCamera.ProcessKeyboard(BACKWARD, deltaTime_basic);
-	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-		basicCamera.ProcessKeyboard(LEFT, deltaTime_basic);
-	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-		basicCamera.ProcessKeyboard(RIGHT, deltaTime_basic);
-}
-
-// glfw: whenever the mouse moves, this callback is called
-// -------------------------------------------------------
-void mouse_callback_basic(GLFWwindow* window, double xpos, double ypos)
-{
-	if (firstMouseBasic)
-	{
-		lastX_basic = xpos;
-		lastY_basic = ypos;
-		firstMouseBasic = false;
-	}
-
-	float xoffset = xpos - lastX_basic;
-	float yoffset = lastY_basic - ypos; // reversed since y-coordinates go from bottom to top
-
-	lastX_basic = xpos;
-	lastY_basic = ypos;
-
-	basicCamera.ProcessMouseMovement(xoffset, yoffset);
-}
-
-// glfw: whenever the mouse scroll wheel scrolls, this callback is called
-// ----------------------------------------------------------------------
-void scroll_callback_basic(GLFWwindow* window, double xoffset, double yoffset)
-{
-	basicCamera.ProcessMouseScroll(yoffset);
 }

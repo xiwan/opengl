@@ -1,6 +1,6 @@
 
-#include "./headers/Shader.h"
-#include "./headers/hello_common.h"
+#include "./headers/shader.h"
+#include "./headers/opengl_common.h"
 
 #define STB_IMAGE_IMPLEMENTATION_2
 #include "./headers/stb_image.h"
