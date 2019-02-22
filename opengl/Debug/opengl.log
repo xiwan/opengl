@@ -7,4 +7,19 @@ e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初�
 e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\light_material.cpp(120): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+e:\vsprojects\opengl\opengl\light_material.cpp(121): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+e:\vsprojects\opengl\opengl\light_material.cpp(122): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
   opengl.vcxproj -> E:\vsprojects\opengl\Debug\opengl.exe

@@ -113,25 +113,41 @@ int lighting_material()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		lightPos = glm::vec3(cos(currentFrame)*2, 0.0f, sin(currentFrame)*2);
-
 		materialShader.use();
-		materialShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
-		materialShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
-		materialShader.setVec3("lightPos", lightPos);
 		materialShader.setVec3("viewPos", gConfig.gCamera.Position);
-		materialShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
-		materialShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
-		materialShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
+
+		glm::vec3 lightColor;
+		lightColor.x = sin(glfwGetTime() * 2.0f);
+		lightColor.y = sin(glfwGetTime() * 0.7f);
+		lightColor.z = sin(glfwGetTime() * 1.3f);
+
+		glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f); // decrease the influence
+		glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // low influence
+		
+		/*materialShader.setVec3("light.ambient", ambientColor);
+		materialShader.setVec3("light.diffuse", diffuseColor);
+		materialShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);*/
+
+		lightPos = glm::vec3(cos(currentFrame) * 2, 0.0f, sin(currentFrame) * 2);
+		materialShader.setVec3("light.position", lightPos);
+		// light properties
+		materialShader.setVec3("light.ambient", 1.0f, 1.0f, 1.0f); // note that all light colors are set at full intensity
+		materialShader.setVec3("light.diffuse", 1.0f, 1.0f, 1.0f);
+		materialShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+
+		// material properties
+		materialShader.setVec3("material.ambient", 0.0f, 0.1f, 0.06f);
+		materialShader.setVec3("material.diffuse", 0.0f, 0.50980392f, 0.50980392f);
+		materialShader.setVec3("material.specular", 0.50196078f, 0.50196078f, 0.50196078f);
 		materialShader.setFloat("material.shininess", 32.0f);
 
-		//model = glm::rotate(model, glm::radians(20.0f), glm::vec3(1.0f, 1.0f, 0.0f));
 		glm::mat4 view = gConfig.get_view();
 		glm::mat4 projection = gConfig.get_perspective();
 		materialShader.setMat4("view", view);
 		materialShader.setMat4("projection", projection);
 
 		glm::mat4 model = glm::mat4(1.0f);
+		//model = glm::rotate(model, glm::radians(20.0f), glm::vec3(1.0f, 1.0f, 0.0f));
 		materialShader.setMat4("model", model);
 		glBindVertexArray(cubeVAO);
 		glDrawArrays(GL_TRIANGLES, 0, sizeof(cubeVertices));
