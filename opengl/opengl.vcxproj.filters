@@ -80,6 +80,9 @@
     <ClCompile Include="lighting_color.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="lighting_basic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\3.3.shader1.fs">
@@ -107,6 +110,15 @@
       <Filter>资源文件\shaders</Filter>
     </None>
     <None Include="shaders\light_source.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\light_basic.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\light_basic.shader.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\light_lamp.shader.fs">
       <Filter>资源文件\shaders</Filter>
     </None>
   </ItemGroup>

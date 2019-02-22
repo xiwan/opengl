@@ -142,6 +142,7 @@
     <ClCompile Include="hello_triangle.cpp" />
     <ClCompile Include="hello_window.cpp" />
     <ClCompile Include="includes\src\glad.c" />
+    <ClCompile Include="lighting_basic.cpp" />
     <ClCompile Include="lighting_color.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,8 +152,11 @@
     <None Include="shaders\3.3.shader2.vs" />
     <None Include="shaders\3d.shader.fs" />
     <None Include="shaders\3d.shader.vs" />
+    <None Include="shaders\light_basic.shader.fs" />
+    <None Include="shaders\light_basic.shader.vs" />
     <None Include="shaders\light_cube.shader.fs" />
     <None Include="shaders\light_cube.shader.vs" />
+    <None Include="shaders\light_lamp.shader.fs" />
     <None Include="shaders\light_source.shader.fs" />
   </ItemGroup>
   <ItemGroup>

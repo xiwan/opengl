@@ -24,7 +24,7 @@ float lastFrame_color = 0.0f; // Time of last frame
 
 int lighting_color()
 {
-	GLFWwindow* window = prepareWindow("hello_camera_fps");
+	GLFWwindow* window = prepareWindow("lighting_color");
 	if (!window) {
 		return -1;
 	}
@@ -34,6 +34,9 @@ int lighting_color()
 
 	// tell GLFW to capture our mouse
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	// configure global opengl state
+	// -----------------------------
+	glEnable(GL_DEPTH_TEST);
 
 	Shader cubeShader("./shaders/light_cube.shader.vs", "./shaders/light_cube.shader.fs");
 	Shader sourceShader("./shaders/light_cube.shader.vs", "./shaders/light_source.shader.fs");
@@ -169,8 +172,7 @@ int lighting_color()
 
 void processInputMoveColor(GLFWwindow *window)
 {
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
+	processInput(window);
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 		colorCamera.ProcessKeyboard(FORWARD, deltaTime_color);
 	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)

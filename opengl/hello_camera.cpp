@@ -182,6 +182,7 @@ int hello_camera()
 
 void processInputMove(GLFWwindow *window)
 {
+	processInput(window);
 	float cameraSpeed = 2.5f * deltaTime; // adjust accordingly
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 		cameraPos += cameraSpeed * cameraFront;

@@ -1,10 +1,10 @@
-﻿  lighting_color.cpp
-e:\vsprojects\opengl\opengl\lighting_color.cpp(115): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_color.cpp(190): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_color.cpp(191): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_color.cpp(195): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_color.cpp(196): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_color.cpp(198): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_color.cpp(199): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\lighting_color.cpp(208): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+﻿  lighting_basic.cpp
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(116): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(194): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(195): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(199): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(200): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(202): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(203): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vsprojects\opengl\opengl\lighting_basic.cpp(212): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   opengl.vcxproj -> E:\vsprojects\opengl\Debug\opengl.exe

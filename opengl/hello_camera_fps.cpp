@@ -2,7 +2,6 @@
 #include "./headers/hello_common.h"
 #include "./headers/camera.h"
 
-
 void processInputMoveFps(GLFWwindow *window);
 void mouse_callback_fps(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback_fps(GLFWwindow* window, double xoffset, double yoffset);
@@ -169,8 +168,7 @@ int hello_camera_fps()
 
 void processInputMoveFps(GLFWwindow *window)
 {
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
+	processInput(window);
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 		fpsCamera.ProcessKeyboard(FORWARD, deltaTime_fps);
 	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
