@@ -42,6 +42,9 @@
     <ClInclude Include="headers\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="lighting_maps.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp">
@@ -80,10 +83,10 @@
     <ClCompile Include="lighting_basic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="light_material.cpp">
+    <ClCompile Include="opengl_common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="opengl_common.cpp">
+    <ClCompile Include="lighting_material.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -127,16 +130,16 @@
     <None Include="shaders\light_lamp.shader.vs">
       <Filter>资源文件\shaders</Filter>
     </None>
-    <None Include="shaders\texture.shader.fs">
-      <Filter>资源文件\shaders</Filter>
-    </None>
-    <None Include="shaders\texture.shader.vs">
-      <Filter>资源文件\shaders</Filter>
-    </None>
     <None Include="shaders\light_material.shader.fs">
       <Filter>资源文件\shaders</Filter>
     </None>
     <None Include="shaders\light_material.shader.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\texture.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\texture.shader.vs">
       <Filter>资源文件\shaders</Filter>
     </None>
   </ItemGroup>

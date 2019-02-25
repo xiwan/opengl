@@ -129,6 +129,7 @@
     <ClInclude Include="headers\stb_image.h" />
     <ClInclude Include="includes\glfw\Includes\glad\glad.h" />
     <ClInclude Include="includes\glfw\Includes\KHR\khrplatform.h" />
+    <ClInclude Include="lighting_maps.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp" />
@@ -144,7 +145,7 @@
     <ClCompile Include="includes\src\glad.c" />
     <ClCompile Include="lighting_basic.cpp" />
     <ClCompile Include="lighting_color.cpp" />
-    <ClCompile Include="light_material.cpp" />
+    <ClCompile Include="lighting_material.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\3.3.shader1.fs" />
