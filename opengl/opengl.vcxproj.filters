@@ -89,6 +89,9 @@
     <ClCompile Include="lighting_maps.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="lingthing_casters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\3.3.shader1.fs">
@@ -146,6 +149,9 @@
       <Filter>资源文件\shaders</Filter>
     </None>
     <None Include="shaders\lighting_maps.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\lighting_casters.shader.fs">
       <Filter>资源文件\shaders</Filter>
     </None>
   </ItemGroup>

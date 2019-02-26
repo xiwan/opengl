@@ -1,10 +1,2 @@
-﻿  lighting_maps.cpp
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(59): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(84): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vsprojects\opengl\opengl\headers\opengl_common.h(94): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+﻿  entry.cpp
   opengl.vcxproj -> E:\vsprojects\opengl\Debug\opengl.exe
