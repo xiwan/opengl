@@ -129,7 +129,6 @@
     <ClInclude Include="headers\stb_image.h" />
     <ClInclude Include="includes\glfw\Includes\glad\glad.h" />
     <ClInclude Include="includes\glfw\Includes\KHR\khrplatform.h" />
-    <ClInclude Include="lighting_maps.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp" />
@@ -137,6 +136,7 @@
     <ClCompile Include="hello_3d_cube.cpp" />
     <ClCompile Include="hello_camera.cpp" />
     <ClCompile Include="hello_camera_fps.cpp" />
+    <ClCompile Include="lighting_maps.cpp" />
     <ClCompile Include="opengl_common.cpp" />
     <ClCompile Include="hello_shader.cpp" />
     <ClCompile Include="hello_texture.cpp" />
@@ -154,6 +154,8 @@
     <None Include="shaders\3.3.shader2.vs" />
     <None Include="shaders\3d.shader.fs" />
     <None Include="shaders\3d.shader.vs" />
+    <None Include="shaders\lighting_maps.shader.fs" />
+    <None Include="shaders\lighting_maps.shader.vs" />
     <None Include="shaders\light_basic.shader.fs" />
     <None Include="shaders\light_basic.shader.vs" />
     <None Include="shaders\light_cube.shader.fs" />
@@ -169,6 +171,10 @@
   <ItemGroup>
     <Image Include="pics\awesomeface.png" />
     <Image Include="pics\container.jpg" />
+    <Image Include="pics\container2.png" />
+    <Image Include="pics\container2_specular.png" />
+    <Image Include="pics\lighting_maps_specular_color.png" />
+    <Image Include="pics\matrix.jpg" />
     <Image Include="pics\wall.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

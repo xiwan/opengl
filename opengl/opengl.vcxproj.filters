@@ -42,9 +42,6 @@
     <ClInclude Include="headers\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="lighting_maps.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp">
@@ -87,6 +84,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="lighting_material.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lighting_maps.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -142,6 +142,12 @@
     <None Include="shaders\texture.shader.vs">
       <Filter>资源文件\shaders</Filter>
     </None>
+    <None Include="shaders\lighting_maps.shader.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\lighting_maps.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="pics\awesomeface.png">
@@ -151,6 +157,18 @@
       <Filter>资源文件\pics</Filter>
     </Image>
     <Image Include="pics\wall.jpg">
+      <Filter>资源文件\pics</Filter>
+    </Image>
+    <Image Include="pics\container2.png">
+      <Filter>资源文件\pics</Filter>
+    </Image>
+    <Image Include="pics\container2_specular.png">
+      <Filter>资源文件\pics</Filter>
+    </Image>
+    <Image Include="pics\lighting_maps_specular_color.png">
+      <Filter>资源文件\pics</Filter>
+    </Image>
+    <Image Include="pics\matrix.jpg">
       <Filter>资源文件\pics</Filter>
     </Image>
   </ItemGroup>

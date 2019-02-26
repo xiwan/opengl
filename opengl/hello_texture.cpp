@@ -50,8 +50,8 @@ int hello_texture()
 	glEnableVertexAttribArray(2);
 
 	unsigned int texture1, texture2;
-	texture1 = loadTexture("./pics/container.jpg", GL_RGB, GL_RGB);
-	texture2 = loadTexture("./pics/awesomeface.png", GL_RGBA, GL_RGBA);
+	texture1 = loadTexture("./pics/container.jpg");
+	texture2 = loadTexture("./pics/awesomeface.png");
 
 	textureShader.use();
 	textureShader.setInt("texture1", 0);
