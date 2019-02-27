@@ -14,6 +14,7 @@ int lighting_basic();
 int lighting_material();
 int lighting_maps();
 int lighting_casters();
+int lighting_spot();
 
 int main()
 {
@@ -30,5 +31,6 @@ int main()
 	//lighting_basic();
 	//lighting_material();
 	//lighting_maps();
-	lighting_casters();
+	//lighting_casters();
+	lighting_spot();
 }

@@ -137,7 +137,8 @@
     <ClCompile Include="hello_camera.cpp" />
     <ClCompile Include="hello_camera_fps.cpp" />
     <ClCompile Include="lighting_maps.cpp" />
-    <ClCompile Include="lingthing_casters.cpp" />
+    <ClCompile Include="lighting_casters.cpp" />
+    <ClCompile Include="lighting_spot.cpp" />
     <ClCompile Include="opengl_common.cpp" />
     <ClCompile Include="hello_shader.cpp" />
     <ClCompile Include="hello_texture.cpp" />
@@ -158,6 +159,7 @@
     <None Include="shaders\lighting_casters.shader.fs" />
     <None Include="shaders\lighting_maps.shader.fs" />
     <None Include="shaders\lighting_maps.shader.vs" />
+    <None Include="shaders\lighting_spot.shader.fs" />
     <None Include="shaders\light_basic.shader.fs" />
     <None Include="shaders\light_basic.shader.vs" />
     <None Include="shaders\light_cube.shader.fs" />
