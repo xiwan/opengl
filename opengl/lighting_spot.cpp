@@ -143,9 +143,10 @@ int lighting_spot()
 		// be sure to activate shader when setting uniforms/drawing objects
 		lightingShader.use();
 		lightPos = glm::vec3(cos(currentFrame) * 2, 0.0f, sin(currentFrame) * 2);
-		lightingShader.setVec3("light.position", lightPos);
+		lightingShader.setVec3("light.position", gConfig.gCamera.Position);
 		lightingShader.setVec3("light.direction", gConfig.gCamera.Front);
 		lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
+		lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
 		lightingShader.setVec3("viewPos", gConfig.gCamera.Position);
 
 		// light properties

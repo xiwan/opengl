@@ -15,6 +15,7 @@ struct Light {
     vec3 specular;
     vec3 direction;
     float cutOff;
+    float outerCutOff;
     float constant;
     float linear;
     float quadratic;
@@ -35,7 +36,9 @@ void main()
     vec3 ambient = light.ambient * vec3(texture(material.diffuse, TexCoords));
 
     float theta = dot(lightDir, normalize(-light.direction));
-    if (theta > light.cutOff)
+    float epsilon = light.cutOff - light.outerCutOff;
+    float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);
+    if (theta > light.outerCutOff)
     {
         // diffuse 
         vec3 norm = normalize(Normal);
@@ -53,8 +56,10 @@ void main()
         float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
         // remove attenuation from ambient, as otherwise at large distances the light would be darker inside than outside the spotlight due the ambient term in the else branche
         // ambient  *= attenuation; 
-        diffuse   *= attenuation;
-        specular *= attenuation; 
+        diffuse *= attenuation;
+        specular *= attenuation;
+        diffuse *= intensity;
+        specular *= intensity;
 
         vec3 result = ambient + diffuse + specular;
         FragColor = vec4(result, 1.0);
