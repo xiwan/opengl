@@ -1,3 +1,7 @@
+
+#include <string>
+using namespace std;
+
 // introduction
 int hello_window();
 int hello_triangle();
@@ -15,6 +19,7 @@ int lighting_material();
 int lighting_maps();
 int lighting_casters();
 int lighting_spot();
+int lighting_multiple(string name);
 
 int main()
 {
@@ -32,5 +37,6 @@ int main()
 	//lighting_material();
 	//lighting_maps();
 	//lighting_casters();
-	lighting_spot();
+	//lighting_spot();
+	lighting_multiple("HORROR");
 }

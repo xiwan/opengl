@@ -125,6 +125,7 @@
     <ClInclude Include="headers\camera.h" />
     <ClInclude Include="headers\opengl_common.h" />
     <ClInclude Include="headers\resource.h" />
+    <ClInclude Include="headers\scene_sets.h" />
     <ClInclude Include="headers\shader.h" />
     <ClInclude Include="headers\stb_image.h" />
     <ClInclude Include="includes\glfw\Includes\glad\glad.h" />
@@ -138,6 +139,7 @@
     <ClCompile Include="hello_camera_fps.cpp" />
     <ClCompile Include="lighting_maps.cpp" />
     <ClCompile Include="lighting_casters.cpp" />
+    <ClCompile Include="lighting_multiple.cpp" />
     <ClCompile Include="lighting_spot.cpp" />
     <ClCompile Include="opengl_common.cpp" />
     <ClCompile Include="hello_shader.cpp" />
@@ -148,6 +150,7 @@
     <ClCompile Include="lighting_basic.cpp" />
     <ClCompile Include="lighting_color.cpp" />
     <ClCompile Include="lighting_material.cpp" />
+    <ClCompile Include="scene_sets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\3.3.shader1.fs" />
@@ -159,9 +162,11 @@
     <None Include="shaders\lighting_casters.shader.fs" />
     <None Include="shaders\lighting_maps.shader.fs" />
     <None Include="shaders\lighting_maps.shader.vs" />
+    <None Include="shaders\lighting_multiple.shader.fs" />
     <None Include="shaders\lighting_spot.shader.fs" />
     <None Include="shaders\light_basic.shader.fs" />
     <None Include="shaders\light_basic.shader.vs" />
+    <None Include="shaders\light_color_lamp.shader.fs" />
     <None Include="shaders\light_cube.shader.fs" />
     <None Include="shaders\light_cube.shader.vs" />
     <None Include="shaders\light_lamp.shader.fs" />

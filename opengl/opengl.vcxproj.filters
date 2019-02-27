@@ -42,6 +42,9 @@
     <ClInclude Include="headers\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headers\scene_sets.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp">
@@ -93,6 +96,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="lighting_spot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lighting_multiple.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="scene_sets.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -158,6 +167,12 @@
       <Filter>资源文件\shaders</Filter>
     </None>
     <None Include="shaders\lighting_spot.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\lighting_multiple.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\light_color_lamp.shader.fs">
       <Filter>资源文件\shaders</Filter>
     </None>
   </ItemGroup>
