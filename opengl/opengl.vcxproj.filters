@@ -19,6 +19,9 @@
     <Filter Include="资源文件\shaders">
       <UniqueIdentifier>{76b5f51f-9fac-44e9-aebb-4e4c58c18e69}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\models">
+      <UniqueIdentifier>{c5943190-ddb3-4b3b-8328-78d9161de574}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\glfw\Includes\glad\glad.h">
@@ -43,6 +46,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="headers\scene_sets.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\model.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -102,6 +111,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="scene_sets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="model_loading.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -173,6 +185,12 @@
       <Filter>资源文件\shaders</Filter>
     </None>
     <None Include="shaders\light_color_lamp.shader.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\model_loading.shader.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\model_loading.shader.fs">
       <Filter>资源文件\shaders</Filter>
     </None>
   </ItemGroup>

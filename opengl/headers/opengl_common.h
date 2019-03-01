@@ -14,7 +14,7 @@
 #include <sstream>
 #include <iostream>
 
-#include "./headers/camera.h"
+#include "camera.h"
 
 // settings
 const unsigned int SCR_WIDTH = 800;

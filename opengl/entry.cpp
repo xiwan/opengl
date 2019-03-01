@@ -21,6 +21,9 @@ int lighting_casters();
 int lighting_spot();
 int lighting_multiple(string name);
 
+// model
+int model_loading();
+
 int main()
 {
 	//hello_window();
@@ -38,5 +41,7 @@ int main()
 	//lighting_maps();
 	//lighting_casters();
 	//lighting_spot();
-	lighting_multiple("HORROR");
+	//lighting_multiple("FACTORY");
+
+	model_loading();
 }

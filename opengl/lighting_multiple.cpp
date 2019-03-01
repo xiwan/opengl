@@ -156,7 +156,7 @@ int lighting_multiple(string name = "HORROR")
 		lightingShader.setVec3("dirLight.specular", scence.directionLightSpecular);
 
 		// point light
-		for (unsigned int i = 0; i < 4; i++)
+		for (unsigned int i = 0; i < POINT_LIGHT_NUMBER; i++)
 		{
 			std::string pointLights = "pointLights[" + std::to_string(i);
 			lightingShader.setVec3( pointLights + "].position", scence.pointLightPosition[i]);

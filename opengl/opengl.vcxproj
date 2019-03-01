@@ -82,7 +82,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>assimp-vc140-mt.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -123,6 +123,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="headers\camera.h" />
+    <ClInclude Include="headers\mesh.h" />
+    <ClInclude Include="headers\model.h" />
     <ClInclude Include="headers\opengl_common.h" />
     <ClInclude Include="headers\resource.h" />
     <ClInclude Include="headers\scene_sets.h" />
@@ -141,6 +143,7 @@
     <ClCompile Include="lighting_casters.cpp" />
     <ClCompile Include="lighting_multiple.cpp" />
     <ClCompile Include="lighting_spot.cpp" />
+    <ClCompile Include="model_loading.cpp" />
     <ClCompile Include="opengl_common.cpp" />
     <ClCompile Include="hello_shader.cpp" />
     <ClCompile Include="hello_texture.cpp" />
@@ -174,6 +177,8 @@
     <None Include="shaders\light_material.shader.fs" />
     <None Include="shaders\light_material.shader.vs" />
     <None Include="shaders\light_source.shader.fs" />
+    <None Include="shaders\model_loading.shader.fs" />
+    <None Include="shaders\model_loading.shader.vs" />
     <None Include="shaders\texture.shader.fs" />
     <None Include="shaders\texture.shader.vs" />
   </ItemGroup>
