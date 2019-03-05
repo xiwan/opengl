@@ -39,6 +39,7 @@ int model_loading()
 	// load models
 	// -----------
 	Model nanoModel("./models/nanosuit/nanosuit.obj");
+	//Model nano2Model("./models/crysis-nano-suit-2/source/2a7aaf86a2f64f07947d3ca5c12edf66/scene.fbx");
 
 	float cubeVertices[] = {
 		// positions          // normals           // texture coords
@@ -144,6 +145,9 @@ int model_loading()
 		modelShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
 		modelShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
 		modelShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+		modelShader.setFloat("light.constant", 1.0f);
+		modelShader.setFloat("light.linear", 0.09f);
+		modelShader.setFloat("light.quadratic", 0.032f);
 		// material properties
 		modelShader.setFloat("shininess", 64.0f);
 
